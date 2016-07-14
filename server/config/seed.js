@@ -4,12 +4,12 @@
  */
 
 'use strict';
-import Thing from '../api/thing/thing.model';
+import Post from '../api/post/post.model';
 import User from '../api/user/user.model';
 
-Thing.find({}).remove()
+Post.find({}).remove()
   .then(() => {
-    Thing.create({
+    Post.create({
       name: 'Development Tools',
       info: 'Integration with popular tools such as Bower, Grunt, Babel, Karma, ' +
              'Mocha, JSHint, Node Inspector, Livereload, Protractor, Jade, ' +
